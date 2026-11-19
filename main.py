@@ -6,20 +6,15 @@
 # KASUS         : KELOMPOK F - Informasi/Data
 # DOSEN PENGAMPU: ERIC SEAN KESUMA,S.T.,M.T
 
-data_nilai = [  42, 55, 61, 68, 73,
-                77, 82, 87, 91, 64,
-                58, 76, 84, 49, 95,
-                59, 60, 79, 80, 100 ]
+data_nilai = [42, 55, 61, 68, 73,   
+              79, 82, 87, 91, 64,
+              58, 76, 84, 49, 95,   #15 Data Inti
+              59, 60, 79, 80, 100]  #5 Data Tambahan
 
-#TESTING ADA 8 DATA
+#8 DATA TESTING
+#data_nilai =[59, 60, 61, 79, 80, 81, 30, 98]
 
-#data_nilai = [  57, 60, 62, 78,
-#                80, 81, 30, 98 ]
-
-# menentukan kategori (clear)
-# menghitung rata-rata (clear)
-# menghitung jumlah kategori (clear)
-
+# menentukan kategori
 def kategori(nilai):
     if nilai < 60:
         return "RENDAH"
@@ -28,9 +23,11 @@ def kategori(nilai):
     else:
         return "TINGGI"
 
+# menghitung rata-rata
 def rata_rata(data):
     return sum(data) / len(data)
 
+# menghitung jumlah kategori
 def hitung_kategori(data):
     rendah = 0
     sedang = 0
